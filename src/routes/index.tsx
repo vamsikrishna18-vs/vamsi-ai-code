@@ -73,18 +73,31 @@ function Portfolio() {
     </header>
 
     <section id="home" className="relative flex min-h-[92vh] scroll-mt-20 items-center overflow-hidden pt-24">
-      <div className="tech-grid pointer-events-none absolute inset-0"/><div className="absolute left-[8%] top-32 font-mono text-xs text-primary/30 animate-float-code">&lt;future_engineer /&gt;</div><div className="absolute bottom-24 right-[8%] font-mono text-xs text-accent/40 animate-float-code">while(curiosity) &#123; build(); &#125;</div>
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-16 lg:grid-cols-[1.15fr_.85fr] lg:px-8">
-        <div><div className="mb-7 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-3 py-1.5 text-xs text-primary"><span className="size-1.5 rounded-full bg-primary"/> Open to learning, building & opportunities</div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[.22em] text-primary">Hello, I’m</p><h1 className="max-w-4xl text-5xl font-bold leading-[1.03] tracking-normal sm:text-6xl lg:text-7xl">Vamsi <span className="text-sheen">Krishna.</span></h1>
-          <div className="mt-6 flex min-h-9 items-center font-mono text-lg text-muted-foreground sm:text-xl"><span className="mr-3 text-primary">//</span><span key={role} className="animate-fade-in">{roles[role]}</span><span className="ml-1 h-6 w-0.5 bg-primary animate-caret"/></div>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">I’m a Computer Science Engineering student specializing in Artificial Intelligence and Data Science, passionate about building practical technology solutions, exploring AI, and continuously improving my development skills.</p>
-          <p className="mt-4 text-sm font-medium text-foreground">B.Tech CSE (AI & Data Science) · Web Developer · Java & Python Enthusiast</p>
-          <div className="mt-9 flex flex-wrap gap-3"><Button size="lg" onClick={() => scrollTo("projects")}>Explore My Work <ArrowDownRight/></Button><Button size="lg" variant="outline" onClick={() => scrollTo("contact")}>Let’s Connect</Button></div>
-          <div className="mt-8 flex items-center gap-3"><a className="grid size-10 place-items-center rounded-md border border-border text-muted-foreground transition hover:border-primary/50 hover:text-primary" href="mailto:vamsikrishnakuracha30091@gmail.com" aria-label="Email Vamsi"><Mail size={17}/></a><span className="grid size-10 cursor-not-allowed place-items-center rounded-md border border-border text-muted-foreground/40" title="LinkedIn URL coming soon"><Linkedin size={17}/></span><span className="grid size-10 cursor-not-allowed place-items-center rounded-md border border-border text-muted-foreground/40" title="GitHub URL coming soon"><Github size={17}/></span></div>
+      <div className="hero-ambient pointer-events-none absolute inset-0" />
+      <div className="tech-grid pointer-events-none absolute inset-0 opacity-55" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/10 sm:size-[44rem]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 size-[25rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/10 sm:size-[34rem]" />
+      <div className="relative mx-auto w-full max-w-6xl px-5 py-14 text-center lg:px-8">
+        <div className="mx-auto flex max-w-4xl flex-col items-center">
+          <div className="hero-glass relative mb-6 grid size-24 place-items-center rounded-full animate-profile sm:size-28">
+            <span className="font-display text-3xl font-bold text-sheen sm:text-4xl">VK</span>
+            <span className="absolute -bottom-1 -right-1 grid size-8 place-items-center rounded-full border-4 border-background bg-primary text-primary-foreground"><Sparkles size={13}/></span>
+          </div>
+          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-2 text-[11px] font-medium uppercase tracking-[.16em] text-muted-foreground backdrop-blur-lg">
+            <span className="relative flex size-2"><span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-70"/><span className="relative inline-flex size-2 rounded-full bg-primary"/></span>
+            Open to learning, building & opportunities
+          </div>
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[.24em] text-primary">Hello, I’m</p>
+          <h1 className="font-display text-6xl font-extrabold leading-[.95] tracking-normal sm:text-7xl lg:text-8xl">Vamsi <span className="text-sheen">Krishna</span></h1>
+          <div className="mt-6 flex min-h-8 items-center justify-center font-mono text-base text-muted-foreground sm:text-lg"><span className="mr-3 text-primary">//</span><span key={role} className="animate-fade-in">{roles[role]}</span><span className="ml-1 h-5 w-0.5 bg-primary animate-caret"/></div>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">A Computer Science Engineering student specializing in <span className="font-medium text-foreground">Artificial Intelligence & Data Science</span>—building practical technology solutions and growing through code.</p>
+          <div className="mt-9 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row"><Button size="lg" className="h-12 rounded-full px-8 transition-transform hover:-translate-y-0.5" onClick={() => scrollTo("projects")}>Explore My Work <ArrowDownRight/></Button><Button size="lg" variant="outline" className="h-12 rounded-full bg-background/30 px-8 backdrop-blur-md" onClick={() => scrollTo("contact")}>Let’s Connect</Button></div>
+          <div className="mt-8 flex items-center gap-3"><a className="grid size-10 place-items-center rounded-full border border-border bg-background/30 text-muted-foreground backdrop-blur-md transition hover:-translate-y-0.5 hover:border-primary/50 hover:text-primary" href="mailto:vamsikrishnakuracha30091@gmail.com" aria-label="Email Vamsi"><Mail size={17}/></a><span className="grid size-10 cursor-not-allowed place-items-center rounded-full border border-border bg-background/30 text-muted-foreground/40" title="LinkedIn URL coming soon"><Linkedin size={17}/></span><span className="grid size-10 cursor-not-allowed place-items-center rounded-full border border-border bg-background/30 text-muted-foreground/40" title="GitHub URL coming soon"><Github size={17}/></span></div>
+          <div className="mt-11 h-px w-full max-w-2xl glow-line opacity-40" />
+          <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-3 font-mono text-[11px] uppercase tracking-[.16em] text-muted-foreground/60"><span>Java</span><span>Python</span><span>Web Development</span><span>Artificial Intelligence</span></div>
         </div>
-        <div className="relative mx-auto aspect-square w-full max-w-md"><div className="absolute inset-5 rounded-full border border-primary/20 animate-profile"/><div className="absolute inset-10 rounded-full border border-dashed border-accent/40"/><div className="glass-panel absolute inset-14 grid place-items-center rounded-full"><div className="text-center"><span className="text-7xl font-bold text-sheen sm:text-8xl">VK</span><p className="mt-2 font-mono text-xs text-muted-foreground">PROFILE_IMAGE.await()</p></div></div><div className="glass-panel absolute right-0 top-16 rounded-md px-3 py-2 font-mono text-xs text-primary">AI + DATA</div><div className="glass-panel absolute bottom-12 left-0 rounded-md px-3 py-2 font-mono text-xs text-accent">2024—2028</div></div>
       </div>
+      <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[.2em] text-muted-foreground/40 sm:flex"><span className="h-px w-8 bg-border"/> Scroll to explore <span className="h-px w-8 bg-border"/></div>
     </section>
 
     <Section id="about" eyebrow="01 / ABOUT" title="Curious by nature. Building with purpose.">
