@@ -194,6 +194,24 @@
   background: linear-gradient(90deg, transparent, var(--primary), var(--accent), transparent);
 }
 
+@utility section-grid {
+  background-image: linear-gradient(90deg, transparent 49.9%, color-mix(in oklab, var(--primary) 5%, transparent) 50%, transparent 50.1%);
+  background-size: min(100%, 80rem) 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes float-code { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes pulse-ring { 0%,100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 0%, transparent); } 50% { box-shadow: 0 0 40px 4px color-mix(in oklab, var(--primary) 18%, transparent); } }
@@ -205,4 +223,5 @@
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
 }
