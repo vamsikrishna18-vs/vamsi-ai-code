@@ -87,8 +87,8 @@ function Portfolio() {
       <div className="pointer-events-none absolute left-1/2 top-1/2 size-[25rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/10 sm:size-[34rem]" />
       <div className="relative mx-auto w-full max-w-6xl px-5 py-14 text-center lg:px-8">
         <div className="mx-auto flex max-w-4xl flex-col items-center">
-          <div className="hero-glass relative mb-6 grid size-24 place-items-center rounded-full animate-profile sm:size-28">
-            <span className="font-display text-3xl font-bold text-sheen sm:text-4xl">VK</span>
+          <div className="hero-glass relative mb-6 grid size-24 place-items-center overflow-hidden rounded-full animate-profile sm:size-28">
+            <img src="https://i.postimg.cc/02fWCLfM/Whats-App-Image-2026-09-08-at-22-42-42.jpg" alt="Kuracha Vamsi Krishna" className="size-full object-cover" loading="eager" />
             <span className="absolute -bottom-1 -right-1 grid size-8 place-items-center rounded-full border-4 border-background bg-primary text-primary-foreground"><Sparkles size={13}/></span>
           </div>
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-2 text-[11px] font-medium uppercase tracking-[.16em] text-muted-foreground backdrop-blur-lg">
