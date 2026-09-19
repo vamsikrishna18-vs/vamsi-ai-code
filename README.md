@@ -4,6 +4,8 @@ A modern, premium personal portfolio website for **KURACHA VAMSI KRISHNA**, a B.
 
 The site communicates: _"This is an ambitious AI & Data Science student who is actively developing into a professional software developer."_
 
+**Live site:** <https://vamsi-ai-code.lovable.app>
+
 ## Sections
 
 - **Home** — Hero with rotating role text, profile photo, CTAs, and social links
