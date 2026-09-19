@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   component: Portfolio,
 });
 
-const nav = [["home","Home"],["about","About"],["education","Education"],["skills","Skills"],["projects","Projects"],["certifications","Certifications"],["contact","Contact"]] as const;
+const nav = [["home","Home"],["about","About"],["education","Education"],["skills","Skills"],["projects","Projects"],["certifications","Certifications"],["learning","Learning"],["contact","Contact"]] as const;
 const roles = ["Java Developer", "Web Developer", "Python Enthusiast", "AI Enthusiast", "Future Software Engineer"];
 const education = [
   { years: "2024 — 2028", title: "B.Tech — Artificial Intelligence & Data Science", place: "Sree Venkateswara College of Engineering", note: "Current · Nellore, Andhra Pradesh" },
