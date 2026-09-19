@@ -42,6 +42,30 @@ npm run dev
 
 The dev server runs at `http://localhost:8080`.
 
+## Deploy
+
+### Lovable (one-click)
+
+Publish from the Lovable editor to get a live URL instantly. No external accounts required.
+
+### Self-hosting on Vercel or Render
+
+The build target is configurable via the `NITRO_PRESET` environment variable, so the same codebase deploys to multiple platforms. Lovable publish runs without the variable and keeps its default Cloudflare/Edge preset.
+
+**Vercel** — `vercel.json` is included.
+
+1. Push this repo to GitHub and connect it to Vercel.
+2. Framework preset: **Other** (no framework override).
+3. Build command: `NITRO_PRESET=vercel npm run build`
+4. Output directory: `.output/public`
+
+**Render** — `render.yaml` is included as a blueprint.
+
+1. Push this repo to GitHub.
+2. In Render, create a new service from this repository (Render reads `render.yaml` automatically).
+3. Build command: `NITRO_PRESET=node-server npm run build`
+4. Start command: `node .output/server/index.mjs`
+
 ## Built with
 
 Built with [Lovable](https://lovable.dev). This code is yours — push to your repository and changes sync back into Lovable.
