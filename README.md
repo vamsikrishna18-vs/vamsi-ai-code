@@ -1,18 +1,37 @@
-# Welcome to your Lovable project
+# Kuracha Vamsi Krishna — Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+A modern, premium personal portfolio website for **KURACHA VAMSI KRISHNA**, a B.Tech Computer Science Engineering student specializing in Artificial Intelligence and Data Science at Sree Venkateswara College of Engineering (SVCN), Nellore, Andhra Pradesh.
 
-## Build with Lovable
+The site communicates: _"This is an ambitious AI & Data Science student who is actively developing into a professional software developer."_
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+## Sections
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Home** — Hero with rotating role text, profile photo, CTAs, and social links
+- **About** — Profile composition with journey highlights and stats
+- **Education** — Vertical timeline (B.Tech 2024–2028, Intermediate 2022–2024, School 2012–2022)
+- **Skills** — Programming, Web Development, AI, Cybersecurity & Cloud
+- **Projects** — Featured projects area (portfolio in progress)
+- **Certifications** — Cybersecurity, AI Tools & ChatGPT Workshop, Full Stack Web Development with AI Training, Cybersecurity Virtual Internship, Zero Trust Cloud Security Virtual Internship
+- **What I'm Learning** — Interactive learning roadmap
+- **Contact** — Contact form (opens a prefilled email draft) and contact details
+
+## Design
+
+- Dark technology-inspired premium developer aesthetic
+- Glassmorphism cards, subtle blue/cyan/purple accents, soft gradients
+- Space Grotesk + Outfit typography
+- Smooth scrolling, scroll reveals, hover animations
+- Fully responsive (desktop, tablet, mobile) with hamburger menu
+- Reduced-motion support for accessibility
+
+## Tech Stack
+
+- TanStack Start (React 19, SSR)
+- TypeScript
+- Tailwind CSS v4
+- Vite 7
 
 ## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
@@ -21,9 +40,8 @@ npm i
 npm run dev
 ```
 
+The dev server runs at `http://localhost:8080`.
+
 ## Built with
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+Built with [Lovable](https://lovable.dev). This code is yours — push to your repository and changes sync back into Lovable.
